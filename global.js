@@ -1,5 +1,7 @@
 // Map initialization
-var map = L.map('map').setView([-12.6953132,-55.9290946], 6);
+var map = L.map('map',{
+    preferCanvas: true
+}).setView([-12.6953132,-55.9290946], 6);
 
 // Marcação no mapa
 var marker = L.marker([-12.6953132,-55.9290946]).addTo(map);
@@ -17,6 +19,8 @@ let polygonn = L.polygon([
     [-11.6953132,-54.9290946],
     [-10.6953132,-55.9290946]
 ]).addTo(map);
+
+L.control.zoom();
 
 
 // adicioando popUp no marker
@@ -59,5 +63,5 @@ function onMapClick(e){
         .openOn(map);
 }
 
-map.on('click', onnMapClick);
+map.on('click', onMapClick);
 
