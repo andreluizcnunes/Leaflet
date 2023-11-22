@@ -6,19 +6,42 @@
 
     <!-- Leaflet css -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css">
+
+
     <link rel="stylesheet" href="./global.css">
 
 
     <title>Leaflet Tutorial</title>
 </head>
 <body>
+    <main>
+        <div class="menu-left">
+            <p>GeoPortal</p>
+            <div id="mapLayer">
+
+            </div>
+        </div>
+        
+        <div class="container-map">
+            <div id="map"></div>
+        </div>
+    </main>
+
     
-    <div id="map"></div>
 
     <!-- Leaflet js -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/Leaflet/Leaflet.Editable@1.2.0/src/Leaflet.Editable.js'></script>
+    <script src='https://openlayers.org/api/OpenLayers.js'></script>
+
     
-    <script src="./global.js"></script>
+    <!-- <script src="./global.js"></script>
+    <script src="./layers.js"></script> -->
+    <script src="./googleMaps.js"></script>
     
 </body>
 </html>
